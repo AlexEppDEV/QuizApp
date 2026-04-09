@@ -1,0 +1,55 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue !important;
+
+}
+
+.app {
+   height: 100%;
+   
+
+}
+.container {
+    height: 100%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+.card {
+    /* width: 30rem !important; */
+    height: 100%;
+}
+
+.quiz-card {
+    width: 30rem !important;
+    /* height: 100%!important;; */
+}
+
+.quiz-footer {
+    border-top: solid 1px rgba(0,0,0,0.4);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.answers-question-card:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+
+.correct {
+    background-color: green;
+
+}
+
+.false {
+    background-color: red;
+
+}

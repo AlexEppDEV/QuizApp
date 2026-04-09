@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/array.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="init()">
+    <!-- <section class="app"> -->
+        <!-- As a heading -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">QuizApp</span>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="card quiz-card" >
+                <img src="./assets/img/main-logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" id="answersQuestionID">Fragen</h5>
+                    
+                    <div class="card mb-2">
+                        <div class="card-body answers-question-card" id="answers_0" onclick="answers('answers-0')">
+                            antwort
+                        </div>
+                    </div>
+
+                    <div class="card mb-2">
+                        <div class="card-body answers-question-card" id="answers_1"  onclick="answers('answers-1')">
+                            antwort
+                        </div>
+                    </div>
+
+                    <div class="card mb-2">
+                        <div class="card-body answers-question-card" id="answers_2"  onclick="answers('answers-2')">
+                            antwort
+                        </div>
+                    </div>
+
+                    <div class="card mb-2">
+                        <div class="card-body answers-question-card" id="answers_3" onclick="answers('answers-3')">
+                            antwort
+                        </div>
+                    </div>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <div class="quiz-footer">
+                    <span>
+                        <b id="quest-number"></b> bis <b id="quest-max-number"></b> fragen
+                    </span>
+
+                    <button type="button" id="next-answers" disabled class="btn btn-primary" onclick="nextQuestion()">nächste frage</button>
+                </div>
+            </div>
+           
+        </main>
+
+    <!-- </section> -->
     
 </body>
+<script src="./script.js"></script>
 </html> 
