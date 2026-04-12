@@ -11,9 +11,12 @@ function loadQuest() {
     let answersQuest = " ";
     
     if (startQuestion >= questions.length) {
-        console.log('ende')
-        startQuestion = 0;
-        init(); 
+        document.getElementById('endScreen').style = '';
+        document.getElementById('questionBody').style = 'display: none;';
+
+        // console.log('ende')
+        // startQuestion = 0;
+        // init(); 
     }
     else {
         let answersQuestion = questions[startQuestion].question;
