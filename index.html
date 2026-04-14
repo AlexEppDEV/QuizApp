@@ -13,17 +13,17 @@
 </head>
 <body onload="init()">
     <section class="app">
-        <div class="category-bar">
+
+        <div class="container category-bar dpf-jd-flex-direction ">
             <nav class="navbar ">
                 <div class="container-fluid dpf-center">
-                    <img src="./assets/icon/logo.png" alt="">
-                    <!-- <span class="navbar-brand mb-0 h1">QuizApp</span> -->
+                    <img src="./assets/icon/logo.png" alt="">               
                 </div>
             </nav>
             <div class="card-body" id="category_body">                   
                     <div class="card mb-2">
                         <div class="card-body answers-question-card" id="category_0" onclick="category('category-0')">
-                            <b>Star Treck</b>
+                            <b>Star Trek TNG</b>
                         </div>
                     </div>
 
@@ -50,17 +50,41 @@
         <!-- As a heading -->
         
 
-        <main class="container">
+        <main class="container dpf-jc-flex-start" style="width: auto;">
             <div class="card quiz-card" >
-                <img src="./assets/img/main-logo.jpg" class="card-img-top" alt="...">
+                <!-- <img src="./assets/img/main-logo.jpg" class="card-img-top" alt="..."> -->
 
-                <div class="card-body" id="endScreen" style="display: none;">
-                    Quiz Ende
+                <div class="card-body " id="endScreen" style="display: none;">
+                    <div class="dpf-center">
+                        <img src="./assets/icon/brain result.png" alt="">
+                        <h3>Complete Quiz</h3>
+                        <!-- <span>
+                                <b id="quest-number"></b> bis <b id="quest-max-number"></b> fragen
+                        </span> -->
+                    </div>
+                   
+                    <div class="quiz-footer">
+                        
+                        
+                        <button 
+                         type="button" 
+                         id="back-category" 
+                         
+                         class="btn btn-danger" 
+                         onclick="nextCategory()"><b>REPLAY</b></button>
+
+                        <button 
+                         type="button" 
+                         id="next-category" 
+                         
+                         class="btn btn-success" 
+                         onclick="nextCategory()"><b>SHARE</b></button>
+                    </div>
                 
                 </div>
 
-                <div class="card-body" id="questionBody">
-                    <h5 class="card-title" id="answersQuestionID">Fragen</h5>
+                <div class="container card-body" id="questionBody">
+                    <h5 class="card-title" id="answersQuestionID" style="text-align: center;">Fragen</h5>
                     
                     <div class="card mb-2">
                         <div class="card-body answers-question-card" id="answers_0" onclick="answers('answers-0')">
@@ -86,12 +110,12 @@
                         </div>
                     </div>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                      <div class="quiz-footer">
-                    <span>
-                        <b id="quest-number"></b> bis <b id="quest-max-number"></b> fragen
-                    </span>
+                    <div class="quiz-footer">
+                        <span>
+                            <b id="quest-number"></b> bis <b id="quest-max-number"></b> fragen
+                        </span>
 
-                    <button type="button" id="next-answers" disabled class="btn btn-primary" onclick="nextQuestion()">nächste frage</button>
+                        <button type="button" id="next-answers" disabled class="btn btn-primary" onclick="nextQuestion()">nächste frage</button>
                     </div>
                 </div>
                
