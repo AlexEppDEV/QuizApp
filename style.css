@@ -81,6 +81,25 @@ body {
 
 }
 
+.start-screen {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/img/brainbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.end-screen {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/icon/tropy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
 /* uni css */
 
 .bgd-color {
@@ -101,6 +120,12 @@ body {
 
 }
 
+.dpf-jc-flex-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important; 
+}
+
 .dpf-jd-flex-direction {
     display: flex !important;
     justify-content: flex-start !important;
@@ -108,3 +133,4 @@ body {
     flex-direction: column !important; 
 
 }
+

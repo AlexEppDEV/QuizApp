@@ -1,6 +1,6 @@
 let questions = {
 
-  starTrek: [
+  "Star Trek TNG": [
     {
       question: "Wer ist der Captain der USS Enterprise in TNG?",
       answers: ["James T. Kirk", "Jean-Luc Picard", "Benjamin Sisko", "Kathryn Janeway"],
@@ -28,7 +28,7 @@ let questions = {
     }
   ],
 
-  starWars: [
+  "Star Wars": [
     {
       question: "Wer ist der Vater von Luke Skywalker?",
       answers: ["Obi-Wan Kenobi", "Han Solo", "Darth Vader", "Yoda"],
@@ -56,7 +56,7 @@ let questions = {
     }
   ],
 
-  stargate: [
+  "Stargate SG1": [
     {
       question: "Wie heißt das Team von O’Neill?",
       answers: ["SG-1", "SG-5", "SG-9", "SG-12"],
@@ -84,7 +84,7 @@ let questions = {
     }
   ],
 
-  theExpanse: [
+  "The Expanse": [
     {
       question: "Wie heißt das Schiff der Crew?",
       answers: ["Rocinante", "Enterprise", "Serenity", "Galactica"],
