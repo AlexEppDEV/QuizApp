@@ -4,6 +4,8 @@ let startCategory = 0; // nummer für die categorys
 let startQuestion = 0; // nummer für start index von der frage
 let rightAnswers = 0;
 let currentQuestions = []; // Speichert das aktuelle Fragen-Array 
+let audio_success = new Audio("assets/audio/win.mp3");
+let audio_fail = new Audio("assets/audio/fail.mp3");
 
 
 function init() {
@@ -92,10 +94,12 @@ function answers(startCategory) {
         document.getElementById('answers_' + exportNumber).classList.add('bg-success');
         rightAnswers++
         document.getElementById('quest_number_right').innerText = rightAnswers;
+        audio_success.play();
     }
     else {
         document.getElementById('answers_' + exportNumber).classList.add('bg-danger');
         document.getElementById('answers_' +rightAnswersQuestion).classList.add('bg-success');
+        audio_fail.play();
     }
 
     document.getElementById('next-answers').disabled = false;
